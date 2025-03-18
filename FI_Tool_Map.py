@@ -73,7 +73,7 @@ st.write(instructions)
 
 
 # Load Cost of Living Data
-file_path = "/Users/David/Desktop/Personal/Blog/Tool/FI_Tool_And_Retire_Abroad/Col_Sal.xlsx"
+file_path = "https://raw.githubusercontent.com/Gadamer007/FI_Calculator/main/Col_Sal.xlsx"
 xls = pd.ExcelFile(file_path)
 df_col = pd.read_excel(xls, sheet_name="Country", usecols=["Country", "Col"])  # Read Country and COL
 
