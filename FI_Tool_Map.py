@@ -57,19 +57,19 @@ def calculate_years_to_fi(initial_portfolio, annual_expenses, annual_roi, swr, n
 # Streamlit UI
 st.markdown("<h2 style='text-align: center;'>🔥 Financial Independence Calculator 🔥</h2>", unsafe_allow_html=True)
 
-# Instructions Section
-st.write("### Instructions")
-instructions = """
-- This tool helps you calculate your **timeline for reaching financial independence (FI)**, when you can live off your investment portfolio.
-- Input the following **key financial details**: Net Annual Income (after tax); Current Annual Expenses; Current Portfolio Value; Expected Annual (Real) Return on Investment (%); Safe Withdrawal Rate (%) (FAQs below); Projected Annual Expenses in Retirement; current Country of Residence; Current Age.
-- The tool calculates 1) what your **target portfolio** should be (your **FI number**), based on your retirement spending needs, and 2) the **number of years** it will likely take you to get there based on average returns.
-- The tool also estimates 3) how your FI timeline changes **if you retire abroad**. To do so, it considers data on cost of living differences (Numbeo, 2025). 
-- The map and tables **compare FI timelines across 106 countries**.
-- The tool assumes you **invest the difference** between your Net Annual Income and Current Annual Expenses.
-- You can enter the values in your country currency.
-- You can **download the plot and map** as .png and the table as .csv.
-"""
-st.write(instructions)
+# Instructions Section (Collapsible)
+with st.expander("📌 **Instructions** (Click to expand)", expanded=False):
+    st.write("""
+    - This tool helps you calculate your **timeline for reaching financial independence (FI)**, when you can live off your investment portfolio.
+    - Input the following **key financial details**: Net Annual Income (after tax); Current Annual Expenses; Current Portfolio Value; Expected Annual (Real) Return on Investment (%); Safe Withdrawal Rate (%) (FAQs below); Projected Annual Expenses in Retirement; Current Country of Residence; Current Age.
+    - The tool calculates 1) what your **target portfolio** should be (your **FI number**), based on your retirement spending needs, and 2) the **number of years** it will likely take you to get there based on average returns.
+    - The tool also estimates 3) how your FI timeline changes **if you retire abroad**. To do so, it considers data on cost of living differences (Numbeo, 2025). 
+    - The map and tables **compare FI timelines across 106 countries**.
+    - The tool assumes you **invest the difference** between your Net Annual Income and Current Annual Expenses.
+    - You can enter the values in your country currency.
+    - You can **download the plot and map** as .png and the table as .csv.
+    """)
+
 
 
 # Load Cost of Living Data
