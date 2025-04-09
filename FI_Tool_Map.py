@@ -57,7 +57,7 @@ def calculate_years_to_fi(initial_portfolio, annual_expenses, annual_roi, swr, n
 # Streamlit UI
 st.markdown("<h2 style='text-align: center;'>🔥 Financial Independence Calculator 🔥</h2>", unsafe_allow_html=True)
 st.markdown(
-    "<p style='text-align: center; color: lightgrey; font-size: 0.95em;'>📱 On mobile? Tap Fullscreen mode below and, after entering your data, rotate your phone horizontally to view the chart and map properly.</p>",
+    "<p style='text-align: center; color: grey; font-size: 0.95em;'>📱 On mobile? Tap Fullscreen mode below and, after entering your data, rotate your phone horizontally to view the chart and map properly.</p>",
     unsafe_allow_html=True
 )
 
